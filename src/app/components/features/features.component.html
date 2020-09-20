@@ -1,0 +1,17 @@
+<div class="features-container">
+    <div class="features-title">
+        <h2>All FEATURES</h2>
+        <h4>IMPORT EVERYTHING IN A CLICK</h4>
+    </div>    
+
+    <div class="features-card">
+        <app-feature-card 
+        *ngFor="let feature of features"
+        [data]="{
+            title: feature.title,
+            description: feature.description,
+            icon: icons[feature.icon]
+        }">
+    </app-feature-card>
+    </div>
+</div>

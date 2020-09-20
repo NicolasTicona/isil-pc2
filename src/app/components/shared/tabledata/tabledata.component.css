@@ -1,0 +1,17 @@
+table{
+    font-weight: bold;
+}
+
+table th{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.contrast{
+    color: #fff;
+}
+
+img{
+    width: 50px;
+    border-radius: 20px;
+}

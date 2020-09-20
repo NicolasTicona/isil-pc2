@@ -1,0 +1,37 @@
+.features-container{
+    padding: 100px;
+}
+
+.features-title{
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.features-title h2{
+    font-size: 150px;
+    color: #A20E651A;
+}
+
+.features-container h4{
+    position: absolute;
+    color: #A20E65;
+    top: calc(50% - 10px);
+}
+
+.features-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+app-feature-card{
+    width: 40%;
+    margin: 10px;
+}

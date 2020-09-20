@@ -1,0 +1,31 @@
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                
+            </div>
+            <div class="col-md-12">
+                <table class="table" [ngClass]="{'contrast': contrast}" >
+                    <thead>
+                        <tr>
+                            <th *ngFor="let thtitle of data.thtitles">{{thtitle}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of data.items">
+                            <td *ngFor="let gap of getKeys(item)">
+                                <ng-container *ngIf="gap != 'photo'; else img;">
+                                    {{item[gap]}}
+                                </ng-container>
+                                <ng-template #img>
+                                    <img [src]="item[gap]" alt="">
+                                </ng-template>    
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>                    
+            </div>
+            <div class="col-md-4">
+                
+            </div>
+        </div>
+    </div>
