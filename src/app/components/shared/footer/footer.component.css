@@ -1,17 +1,52 @@
 .footer-container{
-    padding: 50px 0;
+    padding: 80px 50px;
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+
+    background: url('../../../../assets/footer-bg.svg');
+    background-size: cover;
 }
 
 .footer-title{
+    text-align: center;
+    font-size: 80px;
     margin-bottom: 20px;
 }
 
+.footer-subtitle{
+    text-align: center;
+    font-size: 20px;
+}
+
 .footer-left{
-    width: 60%
+    width: 60%;
+}
+
+form{
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.divider{
+    width: 30%;
+    margin: auto;
+    border: 2px solid #d806b2;
+}
+
+.footer-send{
+    border: none;
+    background: #fff;
+    color: rgb(59, 59, 59);
+    font-size: 15px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    margin: 0 5px;
+    outline: none;
+    transition: all .3s ease;
+    border: 1px solid #ccc;
 }

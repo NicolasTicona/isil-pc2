@@ -1,8 +1,14 @@
 .collaborators-container{
     padding: 20px;
+    margin-bottom: 100px;
 }
 
 h2{
+    color: #d806b2;
     font-size: 50px;
-    margin-bottom: 100px;
+}
+
+p{
+    width: 30%;
+    margin-bottom: 80px;
 }

@@ -1,18 +1,102 @@
 .projects-container{
     padding: 20px;
-}
-
-h2{
-    font-size: 50px;
     margin-bottom: 100px;
 }
 
-.card-img-top{
-    width: 100%;
-    padding: 20px;
-    vertical-align: top;
+.project-categorias{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.card{
-    width: 150px;
+
+.title{
+    color: #d806b2;
+    font-size: 50px;
+}
+
+.main-desc{
+    width: 30%;
+    margin-bottom: 80px;
+}
+
+.project-categorias button{
+    border: none;
+    background: linear-gradient(135deg, #ed85f7 0%,#d806b2 100%);
+    font-size: 15px;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin: 0 20px;
+    outline: none;
+    transition: all .3s ease;
+}
+
+.project-materias{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.project-materias .materia{
+    width: 35%;
+    /* border: 2px solid #d806b2; */
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0px 10px 10px 5px rgba(0,0,0,0.10);
+    border-radius: 10px;
+    padding: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.mat-categoria{
+    color: #ccc;
+    font-size: 14px;
+}
+
+.mat-creditos{
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ed85f7 0%,#d806b2 100%);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.materia h3{
+    color: #d806b2;
+    font-size: 18px;
+}
+
+.materia button{
+    border: none;
+    background: #fff;
+    font-size: 15px;
+    border: 2px solid #d806b2;
+    color: #d806b2;
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin: 0 20px;
+    outline: none;
+    transition: all .3s ease;
+    margin-top: 15px;
+}
+
+.materia button:hover{
+    background-color: #d806b2;
+    color: #fff;
+}
+
+.selected{
+    font-weight: bold;
+    transform: scale(1.1);
 }

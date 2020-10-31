@@ -2,18 +2,31 @@
 
 <div class="projects-container">
         
-    <h2>Projects</h2>
+    <h2 class="title">Materias Certificadas</h2>
+    <p class="main-desc">Estos cursos están hechos de la mano de expertos para ayudarte a potenciar tu carrera científica a niveles competitivos en el mercado.</p>
 
-    <div class="project-card">
-        <div class="card-deck">
-            <div class="card"  *ngFor="let project of projects">
-              <img class="card-img-top" [src]="project.image" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">{{project.title}}</h5>
-                <p class="card-text">{{project.description}}</p>
-              </div>
-            </div>
-          </div>
+    <div class="project-categorias">
+      <button 
+        *ngFor="let cat of categorias" 
+        [ngClass]="{'selected': cat.categoria_id == categoriaSelected}" 
+        (click)="getMateriaPorCategoria(cat)">
+        {{cat.nombre}}
+      </button>
+
+      <button (click)="getMaterias()">
+        Ver todo
+      </button>
+    </div>
+
+    <div class="project-materias">
+      <div class="materia" *ngFor="let mat of materias">
+        <span class="mat-categoria">{{mat.categoria}}</span>
+        <span class="mat-creditos">{{mat.creditos}}</span>
+        <h3>{{mat.nombre}}</h3>
+        <p>{{mat.descripcion}}</p>  
+
+        <button>Acceder ahora!</button>
+      </div>
     </div>
 </div>
 

@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { RoutingModule } from './routing.module'
+import { HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { TabledataComponent } from './components/shared/tabledata/tabledata.component';
@@ -16,6 +17,7 @@ import { FeatureCardComponent } from './components/feature-card/feature-card.com
 import { CalltoactionComponent } from './components/calltoaction/calltoaction.component';
 import { HomeComponent } from './components/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CientificoService} from './services/cientifico.service';
 
 @NgModule({
   declarations: [
@@ -35,9 +37,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   imports: [
     BrowserModule,
     RoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [CientificoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

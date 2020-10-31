@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {thtitles, items} from '../../entities/prices';
+import { CientificoService } from 'src/app/services/cientifico.service';
 
 @Component({
   selector: 'app-calltoaction',
@@ -8,13 +8,29 @@ import {thtitles, items} from '../../entities/prices';
 })
 export class CalltoactionComponent implements OnInit {
 
-  prices = {
-    thtitles, items
-  }
+  thtitles: any[] = [];
+  items: any[] = [];
 
-  constructor() { }
+  prices: any = {
+    thtitles: [],
+    items: []
+  };
+
+  constructor(private _cientico: CientificoService) { }
 
   ngOnInit(): void {
+    this._cientico.getPlanes().subscribe((res: any) => {
+      console.log(res);
+
+      this.thtitles = Object.keys(res[0]);
+      this.items = res;
+
+      this.prices = {
+        thtitles: this.thtitles,
+        items: this.items
+      }
+
+    })
   }
 
 }

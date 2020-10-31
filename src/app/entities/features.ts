@@ -1,22 +1,22 @@
 export const features = [
     {
-        title: 'Elementor Page Builder',
-        description: 'Build your pages with elementor in a couple of minutes.',
+        title: 'Calidad',
+        description: 'Aprende en sesiones de 30 minutos',
         icon: 'faBeer'
     },
     {
-        title: 'WPBakery Page Builder',
-        description: 'Wait, You can use WPBakery page builder too!',
+        title: 'Experiencia',
+        description: 'Consejos de los mayores expertos en diversos campos',
         icon: 'faBolt'
     },
     {
-        title: 'Product Template',
-        description: 'Mayosis have highly customizable product templates.',
+        title: 'Proyectos',
+        description: 'Practica con proyecto propuestos en el laboratorio virtual',
         icon: 'faBroom'
     },
     {
-        title: 'Author Profile',
-        description: 'Mayosis have a well-designed author profile page.',
+        title: 'Comodidad',
+        description: 'No importa donde estes, siempre el contenido estará disponible',
         icon: 'faBox'
     }
 ]

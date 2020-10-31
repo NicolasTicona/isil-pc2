@@ -21,11 +21,25 @@ img{
     position: absolute;
     z-index: 2; 
     text-align: center;
-    background: linear-gradient(135deg, rgba(236, 174, 210, 0.65) 50%,rgba(160,41,111,0) 100%);       
+    background: linear-gradient(45deg, #87e0fd 0%,#ef5363 0%,#d806b2 100%);
     border-radius: 30px;
-    padding: 30px 10px;
+    color: #fff;
+    padding: 30px;
 }
 
 .banner-content h1{
-    color: #A20E65;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.banner-button{
+    border: none;
+    background: #fff;
+    color: rgb(59, 59, 59);
+    font-size: 15px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin: 0 5px;
+    outline: none;
+    transition: all .3s ease;
 }

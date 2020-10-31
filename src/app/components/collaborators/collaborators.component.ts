@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {thtitles, items} from '../../entities/collaborators';
+import { CientificoService } from 'src/app/services/cientifico.service';
 
 @Component({
   selector: 'app-Collaborators',
@@ -7,14 +7,32 @@ import {thtitles, items} from '../../entities/collaborators';
   styleUrls: ['./Collaborators.component.css']
 })
 export class CollaboratorsComponent implements OnInit {
+  
+  thtitles: any[] = [];
+  items: any[] = [];
 
-  collaborators = {
-    thtitles, items
-  }
+  collaborators: any = {
+    thtitles: [],
+    items: []
+  };
 
-  constructor() { }
+
+  constructor(private _cientifico: CientificoService) { }
 
   ngOnInit(): void {
+    this._cientifico.getColaboradores().subscribe((res: any) => {
+      console.log(res);
+
+      
+      this.thtitles = Object.keys(res[0]);
+      this.items = res;
+
+      this.collaborators = {
+        thtitles: this.thtitles,
+        items: this.items
+      }
+    })
+
   }
 
 }
